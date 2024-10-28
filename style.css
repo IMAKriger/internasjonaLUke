@@ -1,0 +1,255 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    background-color: #fefefe; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #5d4a3a; /* Dark brown for elegance */
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.brand {
+    color: #fdfdfd; /* Light text color */
+    font-size: 2.5rem; /* Increased size for brand */
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic; /* Italic for a sophisticated touch */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px; /* Increased margin for spacing */
+}
+
+.nav-links li a {
+    color: #fdfdfd; /* Light text color */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+    color: #e0b0ff; /* Lavender color on hover */
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: #fdfdfd; /* Light color */
+    width: 30px;
+    height: 3px;
+    margin: 5px 0; /* More space between lines */
+}
+
+/* Hamburger Dropdown Menu */
+.hamburger-menu {
+    display: none;
+    background-color: #5d4a3a; /* Dark brown */
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger-menu ul li {
+    text-align: center;
+    padding: 15px 0; /* Increased padding */
+}
+
+.hamburger-menu ul li a {
+    color: #fdfdfd; /* Light color */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hamburger-menu ul li a:hover {
+    background-color: #e0b0ff; /* Lavender hover */
+}
+
+/* Display hamburger menu when open */
+.hamburger-menu.open {
+    display: block;
+}
+
+/* Header Styles */
+header {
+    background-color: #c93c36; /* Rich red for warmth */
+    text-align: center;
+    padding: 70px; /* Increased padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.header-content h1 {
+    font-size: 3.5rem; /* Larger font for main title */
+    margin-bottom: 15px;
+    color: #fdfdfd; /* Light text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.header-content h2 {
+    font-size: 2rem; /* Smaller title */
+    margin-bottom: 10px;
+    color: #fdfdfd; /* Light color */
+}
+
+.header-content p {
+    font-size: 1.6rem; /* Slightly larger font */
+    color: #fdfdfd; /* Light color */
+    margin-bottom: 30px; /* More space below */
+}
+
+.btn {
+    background-color: #fdfdfd; /* Light color */
+    color: #c93c36; /* Rich red */
+    padding: 12px 25px; /* Larger button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Slightly larger font */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #ffd700; /* Gold on hover */
+}
+
+/* Banner Styles */
+.banner {
+    width: 100%;
+    height: 50px; /* Increased height for better visibility */
+    background: linear-gradient(to right, #008C45, #FFFFFF, #FF0000); /* Italian flag colors */
+    margin-bottom: 20px;
+    color: #333; /* Dark text for contrast */
+    display: flex; /* Flex for centering content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: 'Lobster', cursive; /* Italian-inspired font */
+    font-size: 1.5rem; /* Larger text */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Subtle shadow for readability */
+}
+
+#bannertext {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 20px; /* Side padding */
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Text Content Styles */
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 15px;
+    color: #c93c36; /* Rich red */
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+    max-width: 400px; /* Adjust width */
+    height: 300px; /* Adjust height */
+    overflow: hidden;
+    border: 2px solid #c93c36; /* Rich red border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Automatic Slideshow Animation */
+@keyframes slideshow {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slideshow .slide:nth-child(1) {
+    animation: slideshow 15s infinite;
+    animation-delay: 0s;
+}
+
+.slideshow .slide:nth-child(2) {
+    animation: slideshow 15s infinite;
+    animation-delay: 3s;
+}
+
+.slideshow .slide:nth-child(3) {
+    animation: slideshow 15s infinite;
+    animation-delay: 6s;
+}
+
+.slideshow .slide:nth-child(4) {
+    animation: slideshow 15s infinite;
+    animation-delay: 9s;
+}
+
+.slideshow .slide:nth-child(5) {
+    animation: slideshow 15s infinite;
+    animation-delay: 12s;
+}

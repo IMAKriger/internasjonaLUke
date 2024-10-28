@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matkasse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="brand">Matkasse</a>
+            <ul class="nav-links">
+                <li><a href="#">Våre matkasser</a></li>
+                <li><a href="#">Oppskrifter</a></li>
+                <li><a href="#">Bestill</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Dropdown Menu for Hamburger -->
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Våre matkasser</a></li>
+                <li><a href="#">Oppskrifter</a></li>
+                <li><a href="#">Bestill</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Internasjonal Uke</h1>
+            <h2>Italienske Mattradisjoner</h2>
+            <p>Velg mellom 28 oppskrifter fra kun 45 kr per porsjon</p>
+            <a href="#" class="btn">Bestill matkasse</a>
+        </div>
+    </header>
+
+    <!-- Banner with Marquee -->
+    <div class="banner">
+        <marquee behavior="scroll" direction="left" loop>
+            <span id="bannertext">
+                Utforsk en variert og nydelig meny  | Bestill et bord nå! | Serveres fra Mandag til Fredag
+            </span>
+        </marquee>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <!-- Text Content -->
+        <div class="text-content">
+            <h1>Utforsk Italienske Retter</h1>
+            <p class="test">Opplev smaken av Italia med våre autentiske oppskrifter. Nyt deilige pastaer, friske salater, og velsmakende pizzaer, laget med de beste ingrediensene.</p>
+        </div>
+
+        <!-- Slideshow Section -->
+        <section class="slideshow-container">
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="Bilder/brød.jpg" alt="Italiensk mat 1">
+                </div>
+                <div class="slide">
+                    <img src="Bilder/pasta-a-la-vodka.jpg" alt="Italiensk mat 2">
+                </div>
+                <div class="slide">
+                    <img src="Bilder/pizza.jpg" alt="Italiensk mat 3">
+                </div>
+                <div class="slide">
+                    <img src="Bilder/salat.jpg" alt="Italiensk mat 4">
+                </div>
+                <div class="slide">
+                    <img src="Bilder/vetke.jpg" alt="Italiensk mat 5">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript for Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
